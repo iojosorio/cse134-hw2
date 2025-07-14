@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <style>
+        film-card{
+            display: block;
+            width: 220px;
+            height: 300px;
+            margin: 12px;
+            padding: 12px;
+            text-align: right;
+        }
+        film-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        film-card[title="Alien: Romulus"] {
+            background: linear-gradient(to bottom, purple 50%, rgb(0, 0, 0) 50%);
+            color: white
+        }
+    </style>
 </head>
 
 <body>
@@ -41,14 +59,20 @@
                     <li>Prometheus</li>
                     <li>Alien: Convenant</li>
                     <li>Alien</li>
-                    <li>Alien: Romulus</li>
+                    <li>
+                        <film-card title="Alien: Romulus" id="alien-romulus">
+                            <h2>Alien: Romulus</h2>
+                            <img src="./_images/alien-romulus.jpg" alt="Alien: Romulus Poster">
+                            <p>This is favorite film of the Alien franchise.</p>
+                        </film-card>
+                    </li>
                     <li>Aliens</li>
                 </ul>
             </li>
         </ul>
         <aside>
             <p>Here is my favorite scene from the Alien franchise.</p>
-            <video controls src="ash.mp4"></video>
+            <video controls src="./_video/ash.mp4"></video>
         </aside>
         <aside>
             <h2>Other Films.</h2>
@@ -63,7 +87,7 @@
             <article>
                 <h2>My favorite Planet of the Apes film.</h2>
                 <p>My favorite film from the original Planet of the Apes franchise is <cite>Conquest of the Planet of the Apes</cite>. My favorite quote from the film is:</p>
-                <audio controls src="Ceaser's_Speech.mp3"></audio>
+                <audio controls src="./_audio/ceaser.mp3"></audio>
                 <blockquote>
                     Where there is fire, there is smoke. And, in that smoke, from this day forward, my people will crouch and conspire and plot and plan for the inevitable day of man's downfall.
                     The day when he finally and self-destructively turns his weapons against his own kind. The day of the writing in the sky, when your cities lie buried under radioactive rubble.
